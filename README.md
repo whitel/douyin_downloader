@@ -1,6 +1,6 @@
 Douyin PC video downloader
 ---------------------------
-### create python virtual environment
+### Create python virtual environment
 ```
 sudo apt install -y --no-install-recommends python3-virtualenv python-is-python3 python3-pip
 python3 -m virtualenv --python="$(command -v python3)" .env
@@ -18,4 +18,5 @@ pip install beautifulsoup4 lxml requests
 ### TODO
 + [ ] solve douyin.com captcha problem
 + [ ] parse javascript in python or linux environment
++ [ ] record download status
 
