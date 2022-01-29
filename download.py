@@ -2,6 +2,7 @@ import requests
 import os
 from lxml import etree
 from bs4 import BeautifulSoup as bs
+import datetime
 
 prefix = "./htmls/"
 cnt = 0
@@ -14,7 +15,7 @@ def download(filename):
     src = "https:" + src
     title = soup.find("meta",{"data-react-helmet": "true", "name": "description"})["content"]
     print("[v] Downloading:  " + title)
-    with open("./result/" + str(cnt) + ".mp4", "wb") as f:
+    with open("./result/" + str(datetime.datetime.now()) + ".mp4", "wb") as f:
         response = requests.get(src)
         f.write(response.content)
     print("[v] Done")
