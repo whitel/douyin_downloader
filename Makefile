@@ -1,4 +1,7 @@
-.PHONY=all clean download
+.PHONY = all clean download
+PYCACHE := $(shell find . -type d -name "__pycache__")
+HTMLS := htmls
+RESULT := result
 
 all: download
 
@@ -9,4 +12,5 @@ test:
 	@python test.py
 
 clean:
-	rm htmls/* result/*
+	rm $(HTMLS)/* $(RESULT)/* -f
+	rm $(PYCACHE) -rf
