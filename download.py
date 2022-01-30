@@ -26,7 +26,7 @@ def download(filename):
     author = soup.find("div", {"class": "account-name"}).text
     video_hash = hashlib.sha1(video_content)
     with open("./result/" + author + "-" + video_hash.hexdigest() + ".mp4", "wb") as f:
-        f.write(video)
+        f.write(video_content)
     print("[v] Done")
     print("====================================================")
 
