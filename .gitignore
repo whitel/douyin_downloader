@@ -3,5 +3,6 @@ __pycache__
 htmls/*
 result/*
 .env
-private_data.py
+curl_headers
+headers.py
 test.py
