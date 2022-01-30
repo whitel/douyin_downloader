@@ -2,7 +2,6 @@ __pycache__
 
 htmls/*
 result/*
+data/*
 .env
-curl_headers
-headers.py
 test.py
