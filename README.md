@@ -9,11 +9,11 @@ pip install beautifulsoup4 lxml requests
 ```
 
 ### Tutorial
-1. goto https://douyin.com/ and select a video
-2. (on windows)using ctrl-s to save current web page
-3. move .html file to douyin_downloader/htmls
-4. execute `make download` in douyin_downloader
-5. the result is in douyin_downloader/result
+1. `cd ~ && git clone https://github.com/whitel/douyin_downloader`
+2. (on pc)goto https://douyin.com/ and select a video, using ctrl-s to save current web page
+3. move .html file to ~/douyin_downloader/htmls (create one if not exist)
+4. execute `make download` in ~/douyin_downloader
+5. the result is in ~/douyin_downloader/result
 
 ### TODO
 + [ ] solve douyin.com captcha problem
