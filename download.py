@@ -20,11 +20,11 @@ def download(filename):
     title = soup.find("meta",{"data-react-helmet": "true", "name": "description"})["content"]
     print("[v] Downloading:  " + title)
     response = requests.get(src)
-    video = response.content
+    video_content = response.content
 
     # write to local file
     author = soup.find("div", {"class": "account-name"}).text
-    video_hash = hashlib.sha1(video)
+    video_hash = hashlib.sha1(video_content)
     with open("./result/" + author + "-" + video_hash.hexdigest() + ".mp4", "wb") as f:
         f.write(video)
     print("[v] Done")

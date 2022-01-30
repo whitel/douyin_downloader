@@ -19,4 +19,6 @@ pip install beautifulsoup4 lxml requests
 + [ ] solve douyin.com captcha problem
 + [ ] parse javascript in python or linux environment
 + [ ] record download status
++ [ ] handle common errors
++ [ ] download pictures content
 
