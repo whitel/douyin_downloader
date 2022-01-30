@@ -5,10 +5,8 @@ from bs4 import BeautifulSoup as bs
 import datetime
 
 prefix = "./htmls/"
-cnt = 0
 
 def download(filename):
-    global cnt
     with open(prefix + filename, "r") as f:
         soup = bs(f.read(), features="lxml")
     src = soup.find("video").contents[0]["src"]
@@ -20,7 +18,6 @@ def download(filename):
         f.write(response.content)
     print("[v] Done")
     print("=======================================")
-    cnt += 1
 
 if __name__ == '__main__':
     files = os.listdir(prefix)
