@@ -16,9 +16,9 @@ pip install beautifulsoup4 lxml requests
 5. the result is in ~/douyin_downloader/result
 
 ### TODO
-+ [ ] solve douyin.com captcha problem
++ [x] solve douyin.com captcha problem - by using http headers
++ [x] download pictures content - don't do that right now
 + [ ] parse javascript in python or linux environment
 + [ ] record download status
 + [ ] handle common errors
-+ [ ] download pictures content
 

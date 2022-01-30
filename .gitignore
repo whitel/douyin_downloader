@@ -1,4 +1,7 @@
+__pycache__
+
 htmls/*
 result/*
-
 .env
+private_data.py
+test.py
