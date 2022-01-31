@@ -5,7 +5,7 @@ Douyin PC video downloader
 sudo apt install -y --no-install-recommends python3-virtualenv python-is-python3 python3-pip
 python3 -m virtualenv --python="$(command -v python3)" .env
 source .env/bin/activate
-pip install beautifulsoup4 lxml requests
+pip install beautifulsoup4 lxml requests requests-html
 ```
 
 ### Tutorial
